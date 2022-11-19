@@ -1,0 +1,395 @@
+.kyc {
+    padding: 1rem;
+    background-color: #fff;
+    margin: 1rem 0rem 1rem 0rem;
+    border-radius: 10px;
+}
+
+.kyc>h2 {
+    font-family: 'Arapey', serif;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card-single {
+    display: flex;
+    justify-content: flex-start;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid rgb(227, 223, 231);
+}
+
+.card-single div:first-child span {
+    font-size: 2rem;
+    color: var(--main-color);
+    padding-right: 5px;
+}
+
+.card-single div:last-child span {
+    color: var(--text-grey);
+}
+
+
+@media only screen and (max-width:1000px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+/* Step4 */
+
+.step4-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin-top: 1rem;
+}
+
+.single-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(227, 223, 231);
+    padding: 10px;
+    /* width: 280px;?WE */
+}
+
+.cake-img img {
+    width: 98%;
+    /* width: 20px; */
+}
+
+.card-header {
+    display: flex;
+}
+
+.image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.single-card p {
+    font-size: 18px
+}
+
+@media only screen and (max-width:1450px) {
+    .step4-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width:660px) {
+    .step4-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* Step3 */
+
+.step3box h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.input-group div {
+    margin: 10px 0px 2px 0px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select,
+.input-profile input,
+.input-group textarea {
+    width: 95%;
+    background: #f1f5f9;
+    height: 50px;
+    padding: 5px 5px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    /* padding-left: 30px; */
+}
+
+.range-input {
+    margin-top: 30px;
+}
+
+.range-input input {
+    width: 97%;
+    cursor: pointer;
+}
+
+/* 
+.location label {
+    margin-bottom: 5px;
+} */
+
+.location input {
+    width: 95%;
+    background: #f1f5f9;
+    height: 50px;
+    padding: 5px 5px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+.chead {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right button {
+    background-color: rgb(76, 76, 199);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s ease-in;
+}
+
+.right button:hover {
+    background-color: blue;
+}
+
+.radio {
+    font-size: inherit;
+    margin: 0;
+    position: absolute;
+    /* right: 0; */
+    /* right: calc(var(--card-padding) + var(--radio-border-width));
+    top: calc(var(--card-padding) + var(--radio-border-width)); */
+}
+
+
+/* List to show */
+
+.list-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-left {
+    display: flex;
+}
+
+.search-left div {
+    margin-left: 10px;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    /* overflow: hidden; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow-x: scroll;
+}
+
+
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+/* .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+} */
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+}
+
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.toggle-switch {
+    display: inline-block;
+    background: #ccc;
+    border-radius: 16px;
+    width: 58px;
+    height: 32px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+
+.toggle-switch:before,
+.toggle-switch:after {
+    content: "";
+}
+
+.toggle-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: left 0.25s;
+}
+
+.toggle:hover .toggle-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+    background: #56c080;
+}
+
+.toggle-checkbox:checked+.toggle-switch:before {
+    left: 30px;
+}
+
+.toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+.toggle-label {
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.indexedStep {
+    color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    background-color: rgba(211, 211, 211, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indexedStep.accomplished {
+    background-color: rgba(0, 116, 217, 1);
+}
+
+.mainstep {
+    padding: 0 20px 0 20px;
+}
+
+.continue-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.continue-btn button {
+    background-color: rgb(76, 76, 199);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s ease-in;
+}
+
+.la-search {
+    position: relative;
+    top: 2px;
+    left: 18px;
+}
+
+.searchBar input {
+    padding-left: 20px;
+    height: 25px;
+    outline: none;
+}
+
+.cakesimg {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.table-card {
+    display: flex;
+}
+
+.table-card img {
+    height: 35px;
+    width: 40px;
+}
+
+.Rangelabel {
+    background-color: rgb(55, 37, 37);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.whole-list {
+    /* width: 1029px; */
+    overflow-y: auto;
+}
+
+.list-body {
+    width: 100%;
+    min-width: 1028px;
+}
